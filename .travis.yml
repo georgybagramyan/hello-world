@@ -5,3 +5,6 @@ jdk:
 
 script:
 - mvn test -Dspring.profiles.active=travis -Dmaven.javadoc.skip=true
+
+notifications:
+    email: false
