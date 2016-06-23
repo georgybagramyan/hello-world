@@ -1,18 +1,11 @@
 language: java
-
 jdk:
 - oraclejdk8
-
 script:
 - mvn test -Dspring.profiles.active=travis -Dmaven.javadoc.skip=true
-
 notifications:
-    email: false
-
+  email: false
 deploy:
-    skip_cleanup: true
-    provider: heroku
-    api_key:
-        secure: KrO+WGX4rd9SFc3C4D8eV2ncCb7/r5WbFk6uZ0ppGqGj/hPlejpsYQ9Hq0GCZpaxJFRDZYObpaLx8F/sdIg/s2eOb0KL3N6in1YbYxesD4kOGxQ+Kn4mQohKxqZeaDMo+WQC4XErzaPE2enSdg0rl8Zm+D+G7ktB/IVoUR8hUncnzUOi5anWnAxVUXXwRg/iBqSlXZeURx8wQeOZJFhT+s11tRADfRPRtuYRFggWzd6CuGXufgHgQrt3mtZgS6TzY43lgr8/nfwv8ux/XGcmjLdplo+m8EPx4zbDJStFtGUVUrFtYUhNGVh3rvYTymwgvvORJoiaJMfX3FMvQR2TwZAaGapOKQxRej/F7sy7vKli41kuLoh33Xx3GaYOtfyO3DBtpxtT5eNuLsTLrMFcBK+fKJQDAbR0QnBfG/f36sJ9UXYODwpFi2L1MH+Ui/Ygl81y+Wqe/Hht8zsoyxpxlsI0ihC9vj8NzByXabP+4LraWC3nx6rsVhX3zxJyqhLrntE162mh7pRzQKXuE3HdVLmwafuYx7Es86hRawM2comEAQpeTdui7xL32D+uP3+tTF8gTy6b074CngD1CCf7fgMZEdhefyBV7qInHkEbtFsPv+0jZnLAWCkETcSRqAzOrGuMAadFjOMEBgnFfUe2/J0XDbp5y9gCMdjUDRD936A=
-
-
+  provider: heroku
+  api_key:
+    secure: a78JLQ2DtVNxhecUgfURbaRgqEv3fRm2KsT/EWEIxAmtgeTNl93e8wZJNuQI7jdLoQlMidmeiJlIMrYoHfdDVBL3BHtWSvnA2YvCWRSJKIYqKPbv9zAMuEOy4i3mhRgleCiEjPp0DwLUbbgC9tJtqSIcnGdvS3z8FwlRSPRcILsFK4MjZQCcMcge9r/hwOsiIXaakbniYVpbrmC0sQ6rpGrxFiD9vlRIichNA7L7JmIV3dS45uaIQVZ8m4JxhPLNZKnm1kuOfjXVOlOaWEZGzWWizp0zWKWmTMQf8M+MuFnNOSzWkcukeEJlHC4hXZSmrc6RZ2/6H2mT0wc5VDNvAOYY/daManjuhzYlwArl17wFwbjXppPFErTLVRCqx+kQszHSG3tFYsYmmFJPVu/PEvINvFCjr/eZEkLZAoKhpwilUnX2ZVSmHUgMZOUnlkoeMBy8+EU/h6epOQa++IkGDjzsqgu5m4nUr97PuJ9dNxd3/OJOPnvP3IXog3Kj9zs2tBL3GylwMNrWaLFv6YJOuPaxR2ZVQEEXli3zthv0dodgBTbLj0lTM/l89sduAh+fQ9yr/BNZDsoBI9qCoOJ9UhISF+KnapOiF5B2mlGBiNgRAnXD9HEn8WNYTaAa42EyEPlpNz2RKpDffhVZN4qAcPLIBS336Bmn4+25ey4ch5E=
