@@ -20,7 +20,7 @@ public class HelloController {
     @ResponseBody
     public String person(){
         Person person = new Person();
-        person.setAdress("Willemp lepelstraat 15, 2000 Antwerpen");
+        person.setAddress("Willemp lepelstraat 15, 2000 Antwerpen");
         person.setAge(27);
         person.setName("Georgy Bagramyan");
 

@@ -1,7 +1,9 @@
 package hello;
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.Before;
@@ -30,8 +32,17 @@ public class HelloControllerTest {
 
     @Test
     public void getHello() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/api").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
+    }
+
+    @Test
+    public void getPerson() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/api/person").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", is("Georgy Bagramyan")))
+                .andExpect(jsonPath("$.age", is(27)))
+                .andExpect(jsonPath("$.address", is("Willemp lepelstraat 15, 2000 Antwerpen")));
     }
 }

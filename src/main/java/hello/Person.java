@@ -7,7 +7,7 @@ public class Person {
 
     private String name;
     private int age;
-    private String adress;
+    private String address;
 
     public String getName() {
         return name;
@@ -25,11 +25,11 @@ public class Person {
         this.age = age;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
