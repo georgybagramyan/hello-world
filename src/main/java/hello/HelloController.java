@@ -3,6 +3,7 @@ package hello;
 import com.google.gson.Gson;
 import org.springframework.http.converter.json.GsonFactoryBean;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,7 +16,8 @@ public class HelloController {
         return "Greetings from Spring Boot!";
     }
 
-    @RequestMapping(value = "person",method = RequestMethod.GET)
+    @RequestMapping(value = "/person", method = RequestMethod.GET)
+    @ResponseBody
     public String person(){
         Person person = new Person();
         person.setAdress("Willemp lepelstraat 15, 2000 Antwerpen");
