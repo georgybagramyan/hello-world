@@ -24,6 +24,11 @@ public class HelloController {
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String index() {
+        repo.save(new Person("Kevin",27,"Bacon"));
+        repo.save(new Person("MAven",27,"Macon"));
+        repo.save(new Person("Sa",27,"Dsfsd"));
+        repo.save(new Person("Kevsdfqin",27,"Bacqsdfqsdfon"));
+
         return "Greetings from Spring Boot!";
     }
 

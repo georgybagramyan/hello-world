@@ -1,0 +1,14 @@
+spring:
+    profiles: production
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL82Dialect
+        hibernate:
+            ddl-auto: create
+    datasource:
+        url: ${JDBC_DATABASE_URL}
+        driverClassName: org.postgresql.Driver
+        removeAbandoned: true
+        initialSize: 5
+        maxActive: 10
+        maxIdle: 5
+        minIdle: 2
