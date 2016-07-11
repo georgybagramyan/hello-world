@@ -2,12 +2,11 @@ package hello;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.net.URISyntaxException;
 
-/**
- * Created by lollik on 11/07/2016.
- */
+@Configuration
 public class MainConfig {
     @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
