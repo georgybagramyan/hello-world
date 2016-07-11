@@ -38,12 +38,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloControllerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloControllerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4178771">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -902,7 +912,6 @@
       <workItem from="1466784909051" duration="3386000" />
       <workItem from="1467297911956" duration="6372000" />
       <workItem from="1468159800011" duration="5268000" />
-      <workItem from="1468241854584" duration="9454000" />
     </task>
     <servers />
   </component>
@@ -939,7 +948,6 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1398,16 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1519553">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8607595">
@@ -1430,9 +1428,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4178771">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
